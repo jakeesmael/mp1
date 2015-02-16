@@ -4,3 +4,243 @@
 @import "variables";
 @import "mixins";
 @import "base";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+$my-font: 'Open Sans', sans-serif;
+$camp-green: #588C7E;
+$camp-yellow: #F2E394;
+$camp-orange: #F2AE72;
+$camp-red: #D96459;
+$camp-maroon: #8C4646;
+$navbar-large: 80px;
+$navbar-small: 50px;
+$sec-size: 600px;
+$social-size: 50px;
+
+body {
+	background: $camp-yellow;
+}
+
+.navbar {
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+	width: 100%;
+	background: $camp-green;
+	font-family: $my-font;
+
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+
+.large {
+	height: $navbar-large;
+}
+
+.small {
+	height: $navbar-small;
+}
+
+.navbar-link {
+	// vertical centering
+	// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float: right;
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.navbar-link:hover {
+	background: darken($camp-green, 10%)
+}
+
+.sec1 {
+	height: $sec-size;
+	background: $camp-yellow;
+	margin-top: $navbar-large;
+}
+
+.sec2 {
+	height: $sec-size;
+	background-image: url('../img/upfeathers.png');
+	background-attachment: fixed;
+	text-align: center;
+}
+
+.sec3 {
+	height: $sec-size;
+	width: 100%;
+	margin: 0 auto;
+	background: $camp-orange;
+	text-align: center;
+}
+
+.col {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 400px;
+	display: inline-block;
+}
+
+h1 {
+	margin-top: 10px;
+	color: black;
+	font-family: 'Open Sans', sans-serif;;
+}
+
+.sec4 {
+	height: $sec-size;
+	background: $camp-red;
+}
+
+.footer {
+	height: 100px;
+	background: $camp-maroon;
+}
+
+.active {
+	background: darken($camp-green, 10%)
+}
+
+.carousel {
+	position: relative;
+	width: 960px;
+	height: $sec-size;
+	margin: 0 auto;
+}
+
+.carousel-prev, .carousel-next {
+	position: absolute;
+	z-index: 9;
+	width: 50px;
+	height: 100%;
+	background: rgba(0,0,0,0);
+	color: rgba(0,0,0,0);
+	font-size: 300%;
+	text-align: center;
+}
+
+.carousel-prev p, .carousel-next p {
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  text-outline: 2px #000;
+}
+
+.carousel-prev {
+	left: 0px;
+}
+
+.carousel-next {
+	right: 0px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+	color: white;
+	text-shadow: 0px 0px 2px #000;
+	transition: all .5s;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+
+	cursor: pointer;
+}
+
+.carousel img {
+	position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.social {
+	text-align: center;
+	width: 1000px;
+	margin: 0 auto;
+}
+.social a {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+#fb, #ig {
+	width: $social-size;
+	height: $social-size;
+}
+
+#li {
+	width: 60px;
+	height: 54px;
+}
+
+button {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border: 0px;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	background: $camp-green;
+	padding: 10px 15px;
+	text-decoration: none;
+	font-family: $my-font;
+	font-size: 200%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+button:hover, button:active {
+	padding: 9px 14px;
+	outline: 0;
+}
+
+.modal {
+	display: none;
+	background-color: rgba(0,0,0,.85);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+.video-div {
+	// http://tutorialzine.com/2010/03/centering-div-vertically-and-horizontally/
+	position: absolute;
+	// 924x520
+	width: 924px;
+	height: 520px;
+	left: 50%;
+	top: 50%;
+	margin-top: -260px;
+	margin-left: -462px;
+	// text-align: center;
+}
+
+video {
+}
+
+.fa-times {
+	cursor: pointer;
+	position: fixed;
+	top: 30px;
+	right: 30px;
+	color: white;
+}
