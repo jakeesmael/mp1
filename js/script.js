@@ -38,7 +38,6 @@ function positionIndicator (argument) {
 	var sec1 = $('.sec1').offset().top;
 	var sec2 = $('.sec2').offset().top;
 	var sec3 = $('.sec3').offset().top;
-	var sec4 = $('.sec4').offset().top;
 	if ($(window).scrollTop() < sec2-50) {
 		$(navbarLinks).removeClass('active');
 		$('.link1').addClass('active');
@@ -47,13 +46,9 @@ function positionIndicator (argument) {
 		$(navbarLinks).removeClass('active');
 		$('.link2').addClass('active');
 	}
-	else if ($(window).scrollTop() < sec4-50) {
-		$(navbarLinks).removeClass('active');
-		$('.link3').addClass('active');
-	}
 	else {
 		$(navbarLinks).removeClass('active');
-		$('.link4').addClass('active');
+		$('.link3').addClass('active');
 	}
 }
 
