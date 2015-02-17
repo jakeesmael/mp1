@@ -49,6 +49,7 @@ body {
 	// http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
 	position: relative;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   float: right;
 	display: inline-block;
@@ -70,6 +71,7 @@ a.navbar-link:hover {
 .header {
 	position: relative;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	display: inline-block;
 	left: 20px;
@@ -101,6 +103,7 @@ a.navbar-link:hover {
 .col {
 	position: relative;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	width: 400px;
 	display: inline-block;
@@ -148,6 +151,7 @@ h1 {
 	position: relative;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
 
   text-outline: 2px #000;
 }
@@ -174,6 +178,7 @@ h1 {
 	position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
 }
 
 .social {
@@ -214,6 +219,7 @@ button {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 }
 
 button:hover, button:active {
@@ -234,14 +240,12 @@ button:hover, button:active {
 .video-div {
 	// http://tutorialzine.com/2010/03/centering-div-vertically-and-horizontally/
 	position: absolute;
-	// 924x520
 	width: 924px;
 	height: 520px;
 	left: 50%;
 	top: 50%;
 	margin-top: -260px;
 	margin-left: -462px;
-	// text-align: center;
 }
 
 video {

@@ -10,7 +10,7 @@ function smoothScroll() {
 		var navOffset = sec == 1 ? -80 : -50
 		sec = '.sec' + sec
 		var target = $(sec).offset().top + navOffset;
-		$('body').animate({
+		$('body,html').animate({
 			scrollTop: target
 			},
 			1000
