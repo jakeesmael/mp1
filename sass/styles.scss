@@ -16,7 +16,7 @@ $camp-red: #D96459;
 $camp-maroon: #8C4646;
 $navbar-large: 80px;
 $navbar-small: 50px;
-$sec-size: 600px;
+$sec-size: 700px;
 $social-size: 50px;
 
 body {
@@ -112,7 +112,7 @@ a.navbar-link:hover {
 h1 {
 	margin-top: 10px;
 	color: black;
-	font-family: 'Open Sans', sans-serif;;
+	font-family: $my-font;
 }
 
 .sec4 {
